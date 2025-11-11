@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 const routes = [
   // 设置 Eletron 为首页
   {
-    path: '/',
+    path: '/home',
     name: 'EletronHome',
     component: () => import('../views/Eletron.vue'),
     props: true
@@ -22,6 +22,11 @@ const routes = [
     path: '/files',
     name: 'FileList',
     component: () => import('../views/FileList.vue')
+  },
+  {
+    path: '/reliability',
+    name: 'ReliabilityCalc',
+    component: () => import('../views/ReliabilityCalc.vue')
   }
 ];
 
