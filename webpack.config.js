@@ -7,7 +7,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    clean: true
+    clean: true,
+    publicPath: '/eletron3/'
   },
   module: {
     rules: [
@@ -50,13 +51,19 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, 'public')
+      directory: path.join(__dirname, 'public'),
+      publicPath: '/eletron3/'
+    },
+    devMiddleware: {
+      publicPath: '/eletron3/'
     },
     compress: true,
     port: 8080,
     hot: true,
     open: true,
-    historyApiFallback: true
+    historyApiFallback: {
+      index: '/eletron3/'
+    }
   }
 };
 
