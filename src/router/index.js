@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 const routes = [
   // 设置 Eletron 为首页
   {
-    path: '/home',
+    path: '/',
     name: 'EletronHome',
     component: () => import('../views/Eletron.vue'),
     props: true

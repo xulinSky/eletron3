@@ -17,7 +17,7 @@
           active-text-color="var(--color-text-primary)"
           router
         >
-          <el-menu-item index="/home">
+          <el-menu-item index="/">
             <i class="el-icon-s-operation"></i>
             <span>图形编辑</span>
           </el-menu-item>
