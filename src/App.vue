@@ -17,15 +17,15 @@
           active-text-color="var(--color-text-primary)"
           router
         >
-          <el-menu-item index="/">
+          <el-menu-item index="/eletron3">
             <i class="el-icon-s-operation"></i>
             <span>图形编辑</span>
           </el-menu-item>
-          <el-menu-item index="/files">
+          <el-menu-item index="/eletron3/files">
             <i class="el-icon-document"></i>
             <span>文件列表</span>
           </el-menu-item>
-          <el-menu-item index="/reliability">
+          <el-menu-item index="/eletron3/reliability">
             <i class="el-icon-odometer"></i>
             <span>可靠性计算</span>
           </el-menu-item>

@@ -7,24 +7,24 @@ Vue.use(VueRouter);
 const routes = [
   // 设置 Eletron 为首页
   {
-    path: '/',
+    path: '/eletron3/',
     name: 'EletronHome',
     component: () => import('../views/Eletron.vue'),
     props: true
   },
   {
-    path: '/eletron/:fileId?',
+    path: '/eletron3/eletron/:fileId?',
     name: 'Eletron',
     component: () => import('../views/Eletron.vue'),
     props: true
   },
   {
-    path: '/files',
+    path: '/eletron3/files',
     name: 'FileList',
     component: () => import('../views/FileList.vue')
   },
   {
-    path: '/reliability',
+    path: '/eletron3/reliability',
     name: 'ReliabilityCalc',
     component: () => import('../views/ReliabilityCalc.vue')
   }
